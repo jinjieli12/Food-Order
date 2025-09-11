@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Restaurant Chatbot</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <h1>🍽️ Bistro Bot</h1>
+      <p class="muted">Order food with a friendly assistant.</p>
+      <div id="cart"></div>
+      <button id="checkoutBtn" class="primary">Checkout</button>
+    </aside>
+
+    <main class="chat-area">
+      <div id="messages" class="messages"></div>
+      <div id="suggestions" class="suggestions"></div>
+
+      <form id="chatForm" class="composer">
+        <input id="chatInput" type="text" placeholder="Type a message… (e.g., “Order 1 Pepperoni Pizza”)" autocomplete="off" />
+        <button class="send" aria-label="Send">➤</button>
+      </form>
+    </main>
+  </div>
+
+  <template id="msgTemplate">
+    <div class="bubble"></div>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

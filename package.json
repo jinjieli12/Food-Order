@@ -1,0 +1,14 @@
+{
+  "name": "restaurant-chatbot",
+  "version": "1.0.0",
+  "description": "Local restaurant ordering web app with a simple AI-like chatbot (no external APIs).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.17.3"
+  }
+}
